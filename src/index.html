@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Client form</h1>
+      <form class="form">
+        <label class="label">
+          Name
+          <input class="input" type="text" name="name" value="" />
+        </label>
+        <label class="label">
+          Registration date
+          <input class="input" type="text" name="date" value="" />
+        </label>
+        <label class="label">
+          Active
+          <input class="input" type="text" name="isActive" value="" />
+        </label>
+        <button class="btn" type="submit">Add client</button>
+      </form>
+
+      <h2>Accounts</h2>
+
+      <div class="accounts">
+        <form class="debitForm">
+          <h3>Debit</h3>
+          <label class="label">
+            Client id
+            <input class="input" type="text" name="id" value="" />
+          </label>
+          <label class="label">
+            Balance
+            <input class="input" type="text" name="balance" value="" />
+          </label>
+          <label class="label">
+            Activity
+            <input class="input" type="text" name="activity" value="" />
+          </label>
+          <label class="label">
+            Currency
+            <input class="input" type="text" name="currency" value="" />
+          </label>
+          <label class="label">
+            Activity date
+            <input class="input" type="text" name="activityDate" value="" />
+          </label>
+          <label class="label">
+            Card expiry date
+            <input class="input" type="text" name="cardExpiryDate" value="" />
+          </label>
+          <label class="label">
+            Debit account id:
+            <input class="input" type="text" name="accountId" value="" />
+          </label>
+          <button class="btn" type="submit">Add debit account</button>
+        </form>
+
+        <form class="creditForm">
+          <h3>Credit</h3>
+          <label class="label">
+            Client id
+            <input class="input" type="text" name="id" value="" />
+          </label>
+          <label class="label">
+            Balance
+            <input class="input" type="text" name="balance" value="" />
+          </label>
+          <label class="label">
+            Credit limit
+            <input class="input" type="text" name="creditLimit" value="" />
+          </label>
+          <label class="label">
+            Activity
+            <input class="input" type="text" name="activity" value="" />
+          </label>
+          <label class="label">
+            Currency
+            <input class="input" type="text" name="currency" value="" />
+          </label>
+          <label class="label">
+            Activity date
+            <input class="input" type="text" name="activityDate" value="" />
+          </label>
+          <label class="label">
+            Card expiry date
+            <input class="input" type="text" name="cardExpiryDate" value="" />
+          </label>
+          <label class="label">
+            Credit account id:
+            <input class="input" type="text" name="accountId" value="" />
+          </label>
+
+          <button class="btn" type="submit">Add credit account</button>
+        </form>
+      </div>
+
+      <h2 class="title__data">Bank data</h2>
+      <ul class="bankContainer"></ul>
+    </div>
+  </body>
+</html>
