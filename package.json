@@ -26,6 +26,7 @@
     "copy-webpack-plugin": "^10.2.4",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
+    "extract-loader": "^5.1.0",
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
@@ -39,6 +40,9 @@
     "mini-css-extract-plugin": "^2.6.0",
     "node-sass": "^7.0.1",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^1.7.3",
+    "posthtml-loader": "^2.0.1",
     "sass-loader": "^12.6.0",
     "stylelint": "^14.6.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
@@ -48,5 +52,8 @@
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

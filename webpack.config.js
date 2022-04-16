@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+// const posthtml = require("posthtml");
+// const posthtmlInclude = require("posthtml-include");
 
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
@@ -13,8 +15,8 @@ const filename = (ext) =>
 module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: "development",
-  // entry: "./js/main.js",
-  entry: "./ts/index.ts",
+  entry: "./js/main.js",
+  // entry: "./ts/index.ts",
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".scss", ".hbs"],
   },
@@ -38,7 +40,19 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        loader: "html-loader",
+        use: [
+          "html-loader",
+          {
+            loader: "posthtml-loader",
+            options: {
+              plugins: [
+                require("posthtml-include")({
+                  root: path.resolve(__dirname, "src"),
+                }),
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.css$/i,
@@ -67,11 +81,11 @@ module.exports = {
           "sass-loader",
         ],
       },
-      {
-        test: /\.tsx?$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
-      },
+      // {
+      //   test: /\.tsx?$/,
+      //   use: "ts-loader",
+      //   exclude: /node_modules/,
+      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,

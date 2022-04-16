@@ -1,0 +1,41 @@
+@media screen and (min-width: 1500px) {
+  .header__container {
+    max-width: 1500px;
+  }
+}
+
+.header__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+
+  &__link {
+    @include fonts($main-font, 16px, 1.18);
+    color: $primary-text-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 39px;
+  }
+}
+
+.header__button {
+  color: $primary-background-color;
+  background-color: $button-background-color;
+  border: 1px solid $button-background-color;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.header__button:hover {
+  background-color: $hover-background-color;
+}

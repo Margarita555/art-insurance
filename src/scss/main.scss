@@ -1,5 +1,8 @@
-@import "vendor";
-@import "vars";
-@import "settings";
-@import "fonts";
+@import "utils/vendor";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/settings";
+@import "utils/fonts";
 
+@import "components/header";
+@import "components/offers";
