@@ -1,3 +1,23 @@
+.menu-icon {
+  // @media screen and (min-width: $mobile) and (max-width: ($max-mobile)) {
+
+  // }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.header__logo {
+  @media screen and (min-width: $mobile) and (max-width: ($max-mobile)) {
+    width: 96px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 171px;
+  }
+}
+
 .header__container {
   padding-left: 15px;
   padding-right: 15px;
@@ -10,6 +30,9 @@
 
 .site-nav {
   display: flex;
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    display: none;
+  }
 
   &__link {
     @include fonts($main-font, 16px, 1.18);
@@ -41,8 +64,8 @@
   color: $primary-background-color;
   background-color: $button-background-color;
   border: 1px solid $button-background-color;
-  padding-left: 42px;
-  padding-right: 42px;
+  // padding-left: 42px;
+  // padding-right: 42px;
 }
 
 .header__button:hover {

@@ -1,3 +1,9 @@
+$mobile: 360px;
+$max-mobile: 767px;
+$tablet: 768px;
+$max-tablet: 1529px;
+$desktop: 1530px;
+
 $main-font: "Montserrat", sans serif;
 // $main-font: "Nunito", sans serif;
 
@@ -8,7 +14,7 @@ $primary-background-color: #ffffff;
 $background-color: #072d85;
 $secondary-background-color: #f1f7fe;
 // $instagram-background-color: #cfdae3;
-// $hero-background-color: rgba(5, 7, 8, 0.45);
+$service-text-color: #263238;
 $button-background-color: #2155cf;
 $hover-background-color: #1442ae;
 $btn-secondary-bg-color: #ff9504;
