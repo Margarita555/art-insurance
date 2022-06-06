@@ -1,18 +1,67 @@
 .footer {
-  padding-top: 80px;
-  padding-bottom: 60px;
   background-color: $secondary-background-color;
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 
   &__wrapper {
+    text-align: center;
+    border-bottom: 1px solid $footer-border-color;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid $footer-border-color;
+    // flex-wrap: wrap;
+    // @media screen and (min-width: $desktop) {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
   }
 
-  &__site-nav {
-    margin-top: 60px;
-    margin-bottom: 52px;
+  &__logo {
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin: 0 auto;
+    }
+  }
+
+  &__nav {
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 44px;
+      margin-bottom: 44px;
+
+      .nav__item {
+        // display: inline;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #001237;
+      }
+      .nav__item:not(:last-child) {
+        margin-bottom: 27px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      margin-top: 60px;
+      margin-bottom: 52px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .nav__item {
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+    }
   }
 }
 
