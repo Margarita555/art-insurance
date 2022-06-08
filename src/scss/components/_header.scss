@@ -32,15 +32,12 @@
 }
 
 .nav__link {
+  position: relative;
   @include fonts($main-font, 16px, 1.18);
   color: $primary-text-color;
 }
 
-.nav__item {
-  position: relative;
-}
-
-.nav__item:hover::after {
+.nav__link:hover::after {
   position: absolute;
   left: 0;
   bottom: -1px;

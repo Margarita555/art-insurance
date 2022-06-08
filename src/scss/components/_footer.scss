@@ -12,10 +12,12 @@
 
   &__wrapper {
     text-align: center;
-    border-bottom: 1px solid $footer-border-color;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: $desktop) {
+      border-bottom: 1px solid $footer-border-color;
+    }
     // flex-wrap: wrap;
     // @media screen and (min-width: $desktop) {
     //   display: flex;
@@ -33,10 +35,9 @@
   &__nav {
     @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
       margin-top: 44px;
-      margin-bottom: 44px;
 
       .nav__item {
-        // display: inline;
+        margin: 0 auto;
         font-weight: 600;
         font-size: 14px;
         letter-spacing: 0.08em;
@@ -66,41 +67,90 @@
 }
 
 .contacts {
-  margin-top: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &__date {
-    @include fonts($main-font, 14px, 1.71);
+  margin-top: 44px;
+  display: grid;
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "email"
+      "phone"
+      "copyright"
+      "developers";
+  }
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: "copyright contacts-info developers";
   }
 
-  &__sign {
+  &__copyright {
+    grid-area: copyright;
+    @include fonts($main-font, 14px, 1.71);
+    opacity: 0.8;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 42px;
+      margin-bottom: 27px;
+    }
+  }
+  &__item--email {
+    grid-area: email;
+  }
+
+  &__item--phone {
+    grid-area: phone;
+  }
+
+  .copyright-sign {
     margin-right: 4px;
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      padding-bottom: 44px;
+      border-bottom: 1px solid $footer-border-color;
+    }
+    @media screen and (min-width: $desktop) {
+      grid-area: contacts-info;
+      justify-self: center;
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__item:not(:last-child) {
-    margin-right: 36px;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      padding-bottom: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 36px;
+    }
   }
 
   &__link {
-    @include fonts($main-font, 18px, 1.18);
     margin-left: 7px;
+    @include fonts($main-font, 18px, 1.18);
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      color: $contacts-text-color;
+    }
+    @media screen and (min-width: $desktop) {
+      color: $primary-text-color;
+    }
   }
 
   .developers {
+    grid-area: developers;
     display: flex;
     align-items: center;
+    @include fonts($main-font, 14px, 1.16);
+    color: $developers-text-color;
+    opacity: 0.9;
+
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      justify-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+      justify-self: end;
+    }
 
     &__icon {
       margin-left: 4px;
