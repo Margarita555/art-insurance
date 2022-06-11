@@ -1,0 +1,135 @@
+.instruction {
+  background-color: $primary-background-color;
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    padding-top: 60px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  &__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &__image--thumb {
+    position: relative;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      order: 1;
+      width: 285px;
+    }
+  }
+
+  &__image--thumb::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url("../../assets/icons/circle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      width: 233px;
+      height: 236px;
+      bottom: -30px;
+      left: -60px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 435px;
+      height: 435px;
+      bottom: 50px;
+      left: 156px;
+    }
+  }
+
+  &__wrapper {
+    background-color: $background-color;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      padding: 40px 26px 27px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 76px 26px 27px;
+    }
+  }
+
+  &__title {
+    font-family: $main-font;
+    line-height: 1;
+    font-weight: 700;
+    color: $primary-background-color;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      font-size: 26px;
+      padding-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
+      padding-bottom: 36px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    font-family: $main-font;
+    line-height: 1;
+    color: $primary-background-color;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 24px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      padding-bottom: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../../assets/icons/security.svg");
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 39px;
+  }
+
+  &__button {
+    grid-area: button;
+    font-family: $main-font;
+    line-height: 1;
+    border: none;
+    color: $primary-background-color;
+    background-color: $accent-color;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 32px;
+      font-size: 12px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 50px;
+      font-size: 16px;
+    }
+  }
+
+  &__button:hover {
+    background-color: $hover-background-color;
+  }
+}

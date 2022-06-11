@@ -1,0 +1,184 @@
+.offers {
+  background-color: $secondary-background-color;
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__item {
+    background-color: $primary-background-color;
+    border-radius: 10px;
+    box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
+    display: grid;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      padding: 25px;
+      grid-template-columns: 52% 48%;
+      grid-template-areas:
+        "logo rating"
+        "logo stars"
+        "name name"
+        "service service"
+        "franchise price"
+        "franсhise-price new-price"
+        "franсhise-price old-price"
+        "button button";
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 44px 54px 26px 38px;
+      grid-template-columns: 2fr 2fr 3fr 1fr 1fr 2fr;
+      grid-template-areas:
+        "logo stars service franсhise-price new-price button"
+        "logo stars service franсhise-price old-price button";
+    }
+  }
+  &__image {
+    grid-area: logo;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      width: 98px;
+      align-self: center;
+    }
+  }
+  .title-rating {
+    grid-area: rating;
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+  &__rating {
+    grid-area: stars;
+  }
+  .title-name {
+    grid-area: name;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 22px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+  &__service {
+    grid-area: service;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      font-family: $main-font;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.06;
+      color: $service-text-color;
+    }
+  }
+
+  .title-franchise {
+    grid-area: franchise;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 22px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+  .title-price {
+    grid-area: price;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 22px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__franchise {
+    grid-area: franсhise-price;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      font-size: 18px;
+      line-height: 1.06;
+      color: $service-text-color;
+    }
+  }
+
+  &__price--new {
+    grid-area: new-price;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.06;
+      color: $service-text-color;
+    }
+  }
+  .price-wrapper {
+    grid-area: old-price;
+    padding-top: 3px;
+  }
+  &__price--old {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.06;
+    color: $secondary-text-color;
+    position: relative;
+  }
+
+  &__price--old::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid $secondary-text-color;
+    width: 100%;
+    height: 50%;
+    transform: rotate(-12deg);
+  }
+  .button-wrapper {
+    grid-area: button;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 32px;
+      text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+      justify-self: end;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.63;
+    color: primary-text-color;
+    opacity: 0.5;
+    font-weight: 400;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__rating {
+    display: flex;
+  }
+  &__star:not(:last-child) {
+    margin-right: 3px;
+  }
+
+  &__button {
+    border: none;
+    color: $primary-background-color;
+    background-color: $btn-secondary-bg-color;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+
+  &__button:hover {
+    background-color: $btn-hover-bg-color;
+  }
+}

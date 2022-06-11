@@ -1,0 +1,64 @@
+.sort {
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__offers {
+    font-family: $main-font;
+    line-height: 0.73;
+    font-weight: 600;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 16px;
+      font-size: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid $secondary-border-color;
+    border-radius: 6px;
+  }
+
+  &__item {
+    padding: 16px 10px;
+    text-align: center;
+    align-items: center;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      font-size: 12px;
+      width: calc(100% / 3);
+    }
+    @media screen and (min-width: $desktop) {
+      width: 185px;
+      font-size: 16px;
+    }
+  }
+
+  &__item.active {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: $secondary-background-color;
+  }
+
+  &__item:not(:last-child) {
+    border-right: 1px solid $secondary-border-color;
+  }
+}

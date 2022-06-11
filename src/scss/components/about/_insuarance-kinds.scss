@@ -1,0 +1,78 @@
+.kinds {
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 95px;
+  }
+
+  &__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 700;
+    color: $primary-text-color;
+    line-height: 1.2;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-bottom: 32px;
+      font-size: 26px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 44px;
+      font-size: 46px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      flex-direction: column;
+    }
+    @media screen and (min-width: $desktop) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    position: relative;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      align-self: center;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    padding-top: 75px;
+    height: 120px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 93%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    @media screen and (min-width: $desktop) {
+      padding-left: 24px;
+    }
+  }
+
+  &__name {
+    font-family: $main-font;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    color: $primary-background-color;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      text-align: center;
+    }
+  }
+  &__image {
+    border-radius: 12px;
+  }
+}

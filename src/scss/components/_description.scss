@@ -1,0 +1,69 @@
+.description-display {
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.description {
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    margin-top: 30px;
+    padding-bottom: 56px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 40px;
+    padding-bottom: 90px;
+  }
+  &__title {
+    font-family: $main-font;
+    color: $primary-text-color;
+    line-height: 1.22;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 16px;
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    overflow: auto;
+    font-family: $main-font;
+    color: $service-text-color;
+    line-height: 1.46;
+    padding-right: 20px;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      height: 185px;
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 235px;
+      font-size: 16px;
+    }
+  }
+
+  &__text::-webkit-scrollbar {
+    width: 10px;
+  }
+  &__text::-webkit-scrollbar-track {
+    background: #e5e5e5;
+    border: 4px solid #fff;
+  }
+
+  &__text::-webkit-scrollbar-thumb {
+    background: $scroll-color;
+    border-radius: 5px;
+  }
+
+  .overlay-thumb {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    bottom: -21px;
+    width: 98%;
+    height: 38px;
+    background: linear-gradient(180deg, transparent, #fff 30%);
+  }
+}

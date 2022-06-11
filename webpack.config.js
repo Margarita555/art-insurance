@@ -61,6 +61,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               hmr: isDev,
+              url: false,
             },
           },
           "css-loader",
@@ -77,7 +78,9 @@ module.exports = {
               },
             },
           },
+
           "css-loader",
+          "resolve-url-loader",
           "sass-loader",
         ],
       },
@@ -111,6 +114,27 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
+      minify: {
+        collapseWhitespace: isProd,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/about.html"),
+      filename: "about.html",
+      minify: {
+        collapseWhitespace: isProd,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/contacts.html"),
+      filename: "contacts.html",
+      minify: {
+        collapseWhitespace: isProd,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/tourism.html"),
+      filename: "tourism.html",
       minify: {
         collapseWhitespace: isProd,
       },

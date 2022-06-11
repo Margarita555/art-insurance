@@ -1,64 +1,65 @@
-.menu-icon {
-  @media screen and (min-width: $desktop) {
-    display: none;
+.header {
+  &__logo {
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      width: 96px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 171px;
+    }
   }
-}
-
-.header__logo {
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
-    width: 96px;
+  .menu-icon {
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
   }
 
-  @media screen and (min-width: $desktop) {
-    width: 171px;
+  &__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
 
-.header__container {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__nav {
-  display: flex;
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
-    display: none;
+  &__nav {
+    display: flex;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      display: none;
+    }
   }
-}
 
-.nav__link {
-  position: relative;
-  @include fonts($main-font, 16px, 1.18);
-  color: $primary-text-color;
-}
+  .nav__link {
+    position: relative;
+    @include fonts($main-font, 16px, 1.18);
+    color: $primary-text-color;
+  }
 
-.nav__link:hover::after {
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: $hover-background-color;
-  border-radius: 2px;
-}
+  .nav__link:hover::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $hover-background-color;
+    border-radius: 2px;
+  }
 
-.nav__item:not(:last-child) {
-  margin-right: 39px;
-}
+  .nav__item:not(:last-child) {
+    margin-right: 39px;
+  }
 
-.header__button {
-  color: $primary-background-color;
-  background-color: $button-background-color;
-  border: 1px solid $button-background-color;
-}
+  &__button {
+    color: $primary-background-color;
+    background-color: $button-background-color;
+    border: 1px solid $button-background-color;
+  }
 
-.header__button:hover {
-  background-color: $hover-background-color;
+  &__button:hover {
+    background-color: $hover-background-color;
+  }
 }

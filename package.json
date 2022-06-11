@@ -43,6 +43,7 @@
     "posthtml": "^0.16.6",
     "posthtml-include": "^1.7.3",
     "posthtml-loader": "^2.0.1",
+    "resolve-url-loader": "^5.0.0",
     "sass-loader": "^12.6.0",
     "stylelint": "^14.6.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",

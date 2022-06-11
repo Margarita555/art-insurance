@@ -72,12 +72,31 @@ img {
   }
 }
 
-// @media screen and (min-width: 1500px) {
-//   .section {
-//     padding-top: 120px;
-//     padding-bottom: 120px;
-//   }
-// }
+@media screen and (min-width: $desktop) {
+  .greencard__container,
+  .sort__container,
+  .offers__container,
+  .description__container {
+    max-width: 1270px;
+  }
+}
+
+@media screen and (min-width: $mobile) and (max-width: $max-mobile) {
+  .greencard__container,
+  .sort__container,
+  .offers__container,
+  .description__container {
+    max-width: 328px;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  .greencard__container,
+  .sort__container,
+  .offers__container,
+  .description__container {
+    max-width: 728px;
+  }
+}
 
 .button {
   @include fonts($main-font, 14px, 1);
