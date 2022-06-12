@@ -1,11 +1,11 @@
-.kinds {
+.types {
   @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
     padding-top: 30px;
     padding-bottom: 35px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 50px;
-    padding-bottom: 95px;
+    padding-bottom: 25px;
   }
 
   &__container {
