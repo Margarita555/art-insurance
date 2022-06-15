@@ -21,17 +21,12 @@
     }
   }
   &__title {
-    font-family: $main-font;
-    font-weight: 700;
-    color: $primary-text-color;
-    line-height: 1.1;
     @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
       margin-bottom: 16px;
       font-size: 32px;
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 24px;
-      font-size: 46px;
     }
   }
 

@@ -44,16 +44,6 @@ img {
   height: auto;
 }
 
-// .title {
-//   position: relative;
-//   font-family: $main-font;
-//   font-size: 20px;
-//   line-height: 1.21;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-//   // color: $primary-text-color;
-// }
-
 .container {
   margin: 0 auto;
 
@@ -76,7 +66,8 @@ img {
   .greencard__container,
   .sort__container,
   .offers__container,
-  .description__container {
+  .description__container,
+  .preparation__container {
     max-width: 1270px;
   }
 }
@@ -85,7 +76,8 @@ img {
   .greencard__container,
   .sort__container,
   .offers__container,
-  .description__container {
+  .description__container,
+  .preparation__container {
     max-width: 328px;
   }
 }
@@ -93,7 +85,8 @@ img {
   .greencard__container,
   .sort__container,
   .offers__container,
-  .description__container {
+  .description__container,
+  .preparation__container {
     max-width: 728px;
   }
 }
@@ -110,5 +103,17 @@ img {
   @media screen and (min-width: $mobile) and (max-width: ($max-mobile)) {
     padding: 11px 18px;
     font-size: 12px;
+  }
+}
+.title {
+  font-family: $main-font;
+  font-weight: 700;
+  color: $primary-text-color;
+  line-height: 1.1;
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
   }
 }

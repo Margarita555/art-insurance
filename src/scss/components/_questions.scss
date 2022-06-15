@@ -1,0 +1,111 @@
+.questions {
+  //   background-color: #e5e5e5;
+  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    //   padding-top: 60px;
+    //   padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    text-align: center;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      //   margin-bottom: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__list {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // box-shadow: 0px 4px 46px rgba(161, 168, 188, 0.22);
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    // border: 1px solid $secondary-border-color;
+    border-radius: 8px;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      //   margin-bottom: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      //   margin-bottom: 44px;
+    }
+  }
+
+  &__item {
+    // border: 1px solid $secondary-border-color;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      //   margin-bottom: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 32px 40px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid $secondary-border-color;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+
+    // }
+    // @media screen and (min-width: $desktop) {
+
+    // }
+  }
+
+  &__question {
+    // border: 1px solid $secondary-border-color;
+    font-family: $main-font;
+    font-weight: 600;
+    // font-size: 22px;
+    line-height: 1;
+    // color: #1a1b20;
+    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+      //   margin-bottom: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 22px;
+    }
+  }
+  .arrow-down {
+    stroke: $button-background-color;
+  }
+
+  &__item.active &__question {
+    color: $button-background-color;
+  }
+
+  &__item.active &__button {
+    background-color: $button-background-color;
+    border-color: $button-background-color;
+    transform: rotate(180deg);
+  }
+
+  &__item.active use {
+    stroke: $primary-background-color;
+  }
+
+  .answer__text {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #000000;
+    opacity: 0.8;
+  }
+
+  &__button {
+    width: 32px;
+    height: 32px;
+    background-color: $primary-background-color;
+    border: 1px solid $secondary-border-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+}

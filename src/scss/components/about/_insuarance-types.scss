@@ -15,17 +15,11 @@
 
   &__title {
     text-align: center;
-    font-family: $main-font;
-    font-weight: 700;
-    color: $primary-text-color;
-    line-height: 1.2;
     @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
       margin-bottom: 32px;
-      font-size: 26px;
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 44px;
-      font-size: 46px;
     }
   }
 
