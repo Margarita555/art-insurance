@@ -1,6 +1,6 @@
 .offers {
   background-color: $secondary-background-color;
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 42px;
     padding-bottom: 42px;
   }
@@ -18,7 +18,7 @@
     border-radius: 10px;
     box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
     display: grid;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       padding: 25px;
       grid-template-columns: 52% 48%;
       grid-template-areas:
@@ -42,7 +42,7 @@
   }
   &__image {
     grid-area: logo;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 98px;
       align-self: center;
     }
@@ -58,7 +58,7 @@
   }
   .title-name {
     grid-area: name;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 22px;
     }
     @media screen and (min-width: $desktop) {
@@ -67,7 +67,7 @@
   }
   &__service {
     grid-area: service;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-family: $main-font;
       font-weight: 600;
       font-size: 16px;
@@ -78,7 +78,7 @@
 
   .title-franchise {
     grid-area: franchise;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 22px;
     }
     @media screen and (min-width: $desktop) {
@@ -87,7 +87,7 @@
   }
   .title-price {
     grid-area: price;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 22px;
     }
     @media screen and (min-width: $desktop) {
@@ -97,7 +97,7 @@
 
   &__franchise {
     grid-area: franсhise-price;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-size: 18px;
       line-height: 1.06;
       color: $service-text-color;
@@ -106,7 +106,7 @@
 
   &__price--new {
     grid-area: new-price;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-weight: 700;
       font-size: 18px;
       line-height: 1.06;
@@ -135,7 +135,7 @@
   }
   .button-wrapper {
     grid-area: button;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 32px;
       text-align: center;
     }
@@ -153,7 +153,7 @@
   }
 
   &__item:not(:last-child) {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-bottom: 20px;
     }
     @media screen and (min-width: $desktop) {
@@ -172,7 +172,7 @@
     border: none;
     color: $primary-background-color;
     background-color: $btn-secondary-bg-color;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       padding-left: 100px;
       padding-right: 100px;
     }

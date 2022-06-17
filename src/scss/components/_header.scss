@@ -1,6 +1,6 @@
 .header {
   &__logo {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 96px;
     }
 
@@ -15,8 +15,6 @@
   }
 
   &__container {
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 26px;
     padding-bottom: 26px;
     display: flex;
@@ -26,7 +24,7 @@
 
   &__nav {
     display: flex;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       display: none;
     }
   }

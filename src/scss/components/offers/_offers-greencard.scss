@@ -11,7 +11,7 @@
 
   &__wrapper {
     padding: 24px;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       padding-right: 5px;
     }
     @media screen and (min-width: $desktop) {
@@ -34,7 +34,7 @@
   }
 
   &__item {
-    @media screen and (min-width: $mobile) and (max-width: $max-tablet) {
+    @media screen and (min-width: $mobile) and (max-width: $desktop) {
       margin-bottom: 18px;
     }
   }
@@ -53,7 +53,7 @@
   &__title {
     border-bottom: 1px solid $border-color;
 
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       padding: 24px;
       font-size: 32px;
     }
@@ -67,7 +67,7 @@
     color: $button-background-color;
     background-color: $primary-background-color;
     border: 1px solid $button-background-color;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 22px;
       padding: 17px 47px;
     }

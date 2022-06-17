@@ -1,0 +1,192 @@
+.travel-insuarance {
+  // opacity: 0.5;
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    padding-top: 32px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $secondary-background-color;
+  }
+
+  &__box {
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //   margin-bottom: 35px;
+    // }
+    @media screen and (min-width: $desktop) {
+      width: 1072px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 50px 31px;
+      box-shadow: 0px 4px 46px rgba(161, 168, 188, 0.22),
+        0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      background-color: $primary-background-color;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__trip {
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //   margin-bottom: 35px;
+    // }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .input-title {
+    font-family: $main-font;
+    font-weight: 600;
+    line-height: 1.63;
+    color: $primary-text-color;
+    font-size: 16px;
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //   margin-bottom: 35px;
+    // }
+    // @media screen and (min-width: $desktop) {
+    // }
+  }
+
+  .trip-direction {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-bottom: 24px;
+    }
+    //   @media screen and (min-width: $desktop) {
+    // margin-right: 50px;
+    //   }
+  }
+
+  .trip-direction__label {
+    // padding-bottom: 5px;
+    // margin-bottom: 10px;
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //   margin-bottom: 35px;
+    // }
+    // @media screen and (min-width: $desktop) {
+
+    // }
+  }
+
+  .input {
+    border: 1px solid $secondary-border-color;
+    border-radius: 6px;
+    margin-top: 4px;
+    padding: 13px 32px 13px 16px;
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //
+    // }
+    // @media screen and (min-width: $desktop) {
+
+    // }
+  }
+
+  .trip-direction__input {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 554px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .trip-direction__input {
+    display: block;
+  }
+
+  .trip-period {
+    position: relative;
+    display: inline;
+  }
+
+  .trip-period__title {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-bottom: 26px;
+    }
+  }
+
+  .trip-period__days {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: $main-font;
+    font-weight: 700;
+    line-height: 1.63;
+    color: $button-background-color;
+    font-size: 14px;
+  }
+
+  .trip-period__label {
+    font-family: $main-font;
+    line-height: 1.63;
+    color: $label-text-color;
+    font-size: 14px;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      position: absolute;
+      top: 34px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 8px;
+    }
+  }
+
+  .trip-period__select {
+    font-family: $main-font;
+    line-height: 1.18;
+    color: $service-text-color;
+    font-size: 16px;
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //
+    // }
+    // @media screen and (min-width: $desktop) {
+    //   margin-right: 30px;
+    // }
+  }
+
+  .trip-period__select--start {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-right: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  .add-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    // color: $primary-background-color;
+    background-color: transparent;
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //   padding-left: 100px;
+    //   padding-right: 100px;
+    // }
+  }
+
+  .add-button__text {
+    margin-left: 8px;
+  }
+
+  &__button {
+    border: none;
+    color: $primary-background-color;
+    background-color: $btn-secondary-bg-color;
+    // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    //   padding-left: 100px;
+    //   padding-right: 100px;
+    // }
+  }
+}

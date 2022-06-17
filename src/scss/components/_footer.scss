@@ -1,6 +1,6 @@
 .footer {
   background-color: $secondary-background-color;
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 50px;
     padding-bottom: 54px;
   }
@@ -21,13 +21,13 @@
   }
 
   &__logo {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin: 0 auto;
     }
   }
 
   &__nav {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 44px;
 
       .nav__item {
@@ -66,7 +66,7 @@
 .contacts {
   margin-top: 44px;
   display: grid;
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     text-align: center;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -84,7 +84,7 @@
     grid-area: copyright;
     @include fonts($main-font, 14px, 1.71);
     opacity: 0.8;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 42px;
       margin-bottom: 27px;
     }
@@ -102,7 +102,7 @@
   }
 
   &__list {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       padding-bottom: 44px;
       border-bottom: 1px solid $footer-border-color;
     }
@@ -115,7 +115,7 @@
   }
 
   &__item:not(:last-child) {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       padding-bottom: 24px;
     }
     @media screen and (min-width: $desktop) {
@@ -126,7 +126,7 @@
   &__link {
     margin-left: 7px;
     @include fonts($main-font, 18px, 1.18);
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       color: $contacts-text-color;
     }
     @media screen and (min-width: $desktop) {
@@ -142,7 +142,7 @@
     color: $developers-text-color;
     opacity: 0.9;
 
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       justify-content: center;
     }
     @media screen and (min-width: $desktop) {

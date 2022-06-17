@@ -1,5 +1,5 @@
 .types {
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 30px;
     padding-bottom: 35px;
   }
@@ -8,14 +8,9 @@
     padding-bottom: 25px;
   }
 
-  &__container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   &__title {
     text-align: center;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-bottom: 32px;
     }
     @media screen and (min-width: $desktop) {
@@ -25,7 +20,7 @@
 
   &__list {
     display: flex;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       flex-direction: column;
     }
     @media screen and (min-width: $desktop) {
@@ -35,7 +30,7 @@
 
   &__item {
     position: relative;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       align-self: center;
       margin-bottom: 25px;
     }
@@ -62,7 +57,7 @@
     font-weight: 500;
     line-height: 1;
     color: $primary-background-color;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       text-align: center;
     }
   }

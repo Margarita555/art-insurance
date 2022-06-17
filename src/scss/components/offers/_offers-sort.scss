@@ -1,5 +1,5 @@
 .sort {
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -20,7 +20,7 @@
     font-family: $main-font;
     line-height: 0.73;
     font-weight: 600;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 10px;
       margin-bottom: 20px;
       font-size: 26px;
@@ -42,7 +42,7 @@
     padding: 16px 10px;
     text-align: center;
     align-items: center;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-size: 12px;
       width: calc(100% / 3);
     }

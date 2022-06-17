@@ -1,6 +1,6 @@
 .preparation {
   background-color: $primary-background-color;
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -11,7 +11,7 @@
 
   &__title {
     text-align: center;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-bottom: 35px;
     }
     @media screen and (min-width: $desktop) {
@@ -40,7 +40,7 @@
     color: $primary-background-color;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 34px;
       height: 34px;
       font-size: 18px;
@@ -60,7 +60,7 @@
     left: 97%;
     background-color: $circle-background-color;
     z-index: 0;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 120px;
     }
     @media screen and (min-width: $desktop) {
@@ -84,7 +84,7 @@
   }
 
   &__item:not(:last-child) {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-right: 98px;
     }
     @media screen and (min-width: $desktop) {
@@ -92,7 +92,7 @@
     }
   }
   &__choice {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       display: none;
     }
     @media screen and (min-width: $desktop) {
@@ -111,7 +111,7 @@
     background: $primary-background-color;
     box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
     border-radius: 10px;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 34px;
       padding: 24px 18px 50px;
     }
@@ -123,7 +123,7 @@
   }
 
   .application__icon {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       display: none;
     }
     @media screen and (min-width: $desktop) {
@@ -146,7 +146,7 @@
     font-family: $main-font;
     line-height: 1.28;
     color: $service-text-color;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-bottom: 10px;
     }
     @media screen and (min-width: $desktop) {

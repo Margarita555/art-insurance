@@ -1,0 +1,49 @@
+<section class="travel-insuarance">
+  <div class="travel-insuarance__container container">
+    <div class="travel-insuarance__box">
+      <h2 class="travel-insuarance__title title">Туристическое страхование</h2>
+      <div class="travel-insuarance__trip">
+        <div class="trip-direction">
+          <label class="trip-direction__label input-title" id="direction"
+            >Направление поездки</label
+          >
+          <input
+            type="text"
+            for="direction"
+            class="trip-direction__input input"
+          />
+          <span class="trip-direction__example">Например:</span>
+          <a href="#" class="trip-direction__place">Шенгенская зона (Европа)</a>
+          <a href="#" class="trip-direction__place">Весь мир</a>
+        </div>
+
+        <div class="trip-period">
+          <h3 class="trip-period__title input-title">Период поездки</h3>
+          <span class="trip-period__days">11 дней</span>
+          <span class="trip-period__label trip-period__label--start">От</span>
+          <select class="trip-period__select trip-period__select--start input">
+            <option value="">07.11.2019</option>
+            <option value="">08.11.2019</option>
+            <option value="">09.11.2019</option>
+          </select>
+          <span class="trip-period__label trip-period__label__finish">До</span>
+          <select name="" id="" class="trip-period__select input">
+            <option value="">07.11.2019</option>
+            <option value="">08.11.2019</option>
+            <option value="">09.11.2019</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" class="add-button">
+        <svg width="17" height="17">
+          <use href="assets/icons/sprite.svg#plus"></use>
+        </svg>
+        <p class="add-button__text">Добавить туриста</p>
+      </button>
+
+      <button type="button" class="travel-insuarance__button button">
+        От 1296 грн - смотреть полисы
+      </button>
+    </div>
+  </div>
+</section>

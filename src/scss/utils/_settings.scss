@@ -46,18 +46,18 @@ img {
 
 .container {
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-  @media screen and (min-width: $mobile) and (max-width: ($max-mobile)) {
+  @media screen and (min-width: $mobile) and (max-width: ($tablet)) {
     max-width: $mobile;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop)) {
     max-width: $tablet;
   }
-}
 
-@media screen and (min-width: $desktop) {
-  .container {
+  @media screen and (min-width: $desktop) {
     max-width: $desktop;
   }
 }
@@ -65,28 +65,22 @@ img {
 @media screen and (min-width: $desktop) {
   .greencard__container,
   .sort__container,
-  .offers__container,
-  .description__container,
-  .preparation__container {
+  .offers__container {
     max-width: 1270px;
   }
 }
 
-@media screen and (min-width: $mobile) and (max-width: $max-mobile) {
+@media screen and (min-width: $mobile) and (max-width: $desktop) {
   .greencard__container,
   .sort__container,
-  .offers__container,
-  .description__container,
-  .preparation__container {
+  .offers__container {
     max-width: 328px;
   }
 }
-@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
   .greencard__container,
   .sort__container,
-  .offers__container,
-  .description__container,
-  .preparation__container {
+  .offers__container {
     max-width: 728px;
   }
 }
@@ -100,7 +94,7 @@ img {
   text-transform: uppercase;
   cursor: pointer;
 
-  @media screen and (min-width: $mobile) and (max-width: ($max-mobile)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding: 11px 18px;
     font-size: 12px;
   }
@@ -110,7 +104,7 @@ img {
   font-weight: 700;
   color: $primary-text-color;
   line-height: 1.1;
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     font-size: 26px;
   }
   @media screen and (min-width: $desktop) {

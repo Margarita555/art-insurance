@@ -1,16 +1,11 @@
 .about {
-  @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 40px;
     padding-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 80px;
     padding-bottom: 50px;
-  }
-
-  &__container {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   &__wrapper {
@@ -21,7 +16,7 @@
     }
   }
   &__title {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-bottom: 16px;
       font-size: 32px;
     }
@@ -35,7 +30,7 @@
     line-height: 1.5;
     color: $primary-text-color;
     opacity: 0.8;
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-size: 16px;
       margin-bottom: 32px;
     }
@@ -45,7 +40,7 @@
     }
   }
   &__image {
-    @media screen and (min-width: $mobile) and (max-width: ($max-tablet)) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-left: auto;
       margin-right: auto;
     }
