@@ -12,13 +12,17 @@
             for="direction"
             class="trip-direction__input input"
           />
-          <span class="trip-direction__example">Например:</span>
-          <a href="#" class="trip-direction__place">Шенгенская зона (Европа)</a>
-          <a href="#" class="trip-direction__place">Весь мир</a>
+          <div class="example-wrapper">
+            <span class="example">Например:</span>
+            <a href="#" class="example__text example--first"
+              >Шенгенская зона (Европа)</a
+            >
+            <a href="#" class="example__text">Весь мир</a>
+          </div>
         </div>
 
         <div class="trip-period">
-          <h3 class="trip-period__title input-title">Период поездки</h3>
+          <h4 class="trip-period__title input-title">Период поездки</h4>
           <span class="trip-period__days">11 дней</span>
           <span class="trip-period__label trip-period__label--start">От</span>
           <select class="trip-period__select trip-period__select--start input">
@@ -32,6 +36,30 @@
             <option value="">08.11.2019</option>
             <option value="">09.11.2019</option>
           </select>
+        </div>
+      </div>
+
+      <div class="tourists">
+        <h3 class="tourists__title">Данные о туристах</h3>
+        <div class="tourists__wrapper">
+          <div class="tourists__box">
+            <h4 class="tourists__subtitle">Турист 1</h4>
+            <ul class="tourists__list">
+              <li class="tourists__item">
+                <label id="date" class="tourists__label input-title"
+                  >Дата рождения</label
+                >
+                <input type="date" for="date" class="tourists__input input" />
+
+                <h4 class="tourists__select-title input-title">Цель поездки</h4>
+                <select class="tourists__select input">
+                  <option value="">посещение родственников</option>
+                  <option value="">посещение родственников</option>
+                  <option value="">посещение родственников</option>
+                </select>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <button type="button" class="add-button">
