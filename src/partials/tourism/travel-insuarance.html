@@ -25,13 +25,17 @@
           <h4 class="trip-period__title input-title">Период поездки</h4>
           <span class="trip-period__days">11 дней</span>
           <span class="trip-period__label trip-period__label--start">От</span>
-          <select class="trip-period__select trip-period__select--start input">
+          <select
+            class="trip-period__select trip-period__select--start input select"
+          >
             <option value="">07.11.2019</option>
             <option value="">08.11.2019</option>
             <option value="">09.11.2019</option>
           </select>
-          <span class="trip-period__label trip-period__label__finish">До</span>
-          <select name="" id="" class="trip-period__select input">
+          <span class="trip-period__label trip-period__label__finish select"
+            >До</span
+          >
+          <select name="" id="" class="trip-period__select input select">
             <option value="">07.11.2019</option>
             <option value="">08.11.2019</option>
             <option value="">09.11.2019</option>
@@ -46,17 +50,22 @@
             <h4 class="tourists__subtitle">Турист 1</h4>
             <ul class="tourists__list">
               <li class="tourists__item">
-                <label id="date" class="tourists__label input-title"
-                  >Дата рождения</label
-                >
-                <input type="date" for="date" class="tourists__input input" />
-
-                <h4 class="tourists__select-title input-title">Цель поездки</h4>
-                <select class="tourists__select input">
-                  <option value="">посещение родственников</option>
-                  <option value="">посещение родственников</option>
-                  <option value="">посещение родственников</option>
-                </select>
+                <div class="date-wrapper">
+                  <label id="date" class="tourists__label input-title"
+                    >Дата рождения</label
+                  >
+                  <input type="rext" for="date" class="tourists__input input" />
+                </div>
+                <div class="aim-wrapper">
+                  <h4 class="tourists__select-title input-title">
+                    Цель поездки
+                  </h4>
+                  <select class="tourists__select input select">
+                    <option value="">посещение родственников</option>
+                    <option value="">посещение родственников</option>
+                    <option value="">посещение родственников</option>
+                  </select>
+                </div>
               </li>
             </ul>
           </div>

@@ -98,15 +98,9 @@
 <symbol id="down-arrow" viewBox="0 0 51 32">
 <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l22.4 22.4 22.4-22.4"></path>
 </symbol>
-
-<symbol id="white-down-arrow" viewBox="0 0 32 32">
-<path style="stroke: var(--color3, #d7e1e9)" stroke="#d7e1e9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1" d="M16 31.5c-8.56 0-15.5-6.94-15.5-15.5s6.94-15.5 15.5-15.5c8.56 0 15.5 6.94 15.5 15.5s-6.94 15.5-15.5 15.5z"></path>
-<path fill="none" stroke="#2155cf" style="stroke: var(--color1, #2155cf)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M20.923 13.538l-4.923 5.128-4.923-5.128"></path>
-</symbol>
-
-<symbol id="blue-left-arrow" viewBox="0 0 32 32">
-<path fill="#2155cf" style="fill: var(--color1, #2155cf)" d="M3.2 16c0 7.069 5.731 12.8 12.8 12.8s12.8-5.731 12.8-12.8c0-7.069-5.731-12.8-12.8-12.8s-12.8 5.731-12.8 12.8z"></path>
-<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.28" d="M17.28 13.44l-2.56 2.56 2.56 2.56"></path>
+<symbol id="open-icon" viewBox="0 0 32 32">
+<path fill="#2155cf" style="fill: var(--color1, #2155cf)" d="M30.545 0h-11.636c-0.803 0-1.455 0.651-1.455 1.455s0.651 1.455 1.455 1.455h8.125l-14.971 14.972c-0.568 0.568-0.568 1.489 0 2.057 0.284 0.284 0.656 0.426 1.028 0.426s0.745-0.142 1.029-0.426l14.972-14.971v8.125c0 0.803 0.651 1.455 1.455 1.455s1.454-0.651 1.454-1.455v-11.636c0-0.803-0.651-1.455-1.455-1.455z"></path>
+<path fill="#2155cf" style="fill: var(--color1, #2155cf)" d="M24.727 14.545c-0.803 0-1.455 0.651-1.455 1.455v13.091h-20.364v-20.364h13.091c0.803 0 1.455-0.651 1.455-1.455s-0.651-1.455-1.455-1.455h-14.545c-0.803 0-1.455 0.651-1.455 1.455v23.273c0 0.803 0.651 1.455 1.455 1.455h23.273c0.803 0 1.455-0.651 1.455-1.455v-14.546c-0-0.803-0.651-1.455-1.455-1.455z"></path>
 </symbol>
 </defs>
 </svg>
