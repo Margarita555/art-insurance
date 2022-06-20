@@ -1,0 +1,79 @@
+.examples {
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  &__title {
+    text-align: center;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      overflow: hidden;
+      margin-top: 24px;
+      margin-bottom: 32px;
+      box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.16);
+    }
+    @media screen and (min-width: 767px) and (max-width: $desktop) {
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 40px;
+    }
+  }
+
+  &__item {
+    border-radius: 10px;
+    box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.16);
+    @media screen and (min-width: $mobile) and (max-width: $desktop) {
+      padding: 18px 35px;
+      flex-shrink: 0;
+      width: 157px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 41px 82px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-right: 16px;
+    }
+  }
+
+  .sort__list--examples {
+    justify-content: center;
+  }
+
+  .sort__item--examples {
+    @media screen and (min-width: $mobile) and (max-width: $desktop) {
+      width: 164px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 196px;
+    }
+  }
+
+  .slide__buttons--examples {
+    @media screen and (min-width: $mobile) and (max-width: $desktop) {
+      justify-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+}

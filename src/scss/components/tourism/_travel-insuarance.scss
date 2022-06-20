@@ -189,14 +189,20 @@
       padding: 21px 19px 34px;
       border-top: 1px solid $border-color;
       border-bottom: 1px solid $border-color;
-      margin-left: -570px;
-      margin-right: -570px;
+      margin-left: -15px;
+      margin-right: -15px;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 366px) {
       padding: 24px 30px 32px;
       border: 1px solid $border-color;
       border-radius: 12px;
     }
+
+    // @media screen and (min-width: $desktop) {
+    //   padding: 24px 30px 32px;
+    //   border: 1px solid $border-color;
+    //   border-radius: 12px;
+    // }
   }
   .tourists__box {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {

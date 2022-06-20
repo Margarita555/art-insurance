@@ -27,31 +27,16 @@
     }
 
     &__item {
+      padding-top: 17px;
+      padding-bottom: 16px;
       display: flex;
       justify-content: center;
       background-color: $extra-background-color;
-      padding-top: 17px;
-      padding-bottom: 16px;
+      border-radius: 6px;
     }
 
     &__item:not(:last-child) {
       margin-bottom: 16px;
-    }
-
-    .svg-wrapper {
-      // @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      //   flex-direction: column;
-      // }
-      // @media screen and (min-width: $desktop) {
-      //   border: 1px solid $secondary-border-color;
-      //   width: 80px;
-      //   height: 80px;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-
-      //   border-radius: 8px;
-      // }
     }
   }
 }

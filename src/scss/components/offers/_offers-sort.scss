@@ -33,32 +33,46 @@
 
   &__list {
     display: flex;
-    align-items: stretch;
-    border: 1px solid $secondary-border-color;
-    border-radius: 6px;
   }
 
   &__item {
+    border: 1px solid $secondary-border-color;
     padding: 16px 10px;
     text-align: center;
-    align-items: center;
+    color: $sort-text-color;
+    font-weight: 600;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-size: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+  &__item:not(:last-child) {
+    border-right: none;
+  }
+
+  &__item:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &__item:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  &__item--offers {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: calc(100% / 3);
     }
     @media screen and (min-width: $desktop) {
       width: 185px;
-      font-size: 16px;
     }
   }
 
   &__item.active {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
     background-color: $secondary-background-color;
-  }
-
-  &__item:not(:last-child) {
-    border-right: 1px solid $secondary-border-color;
+    color: $primary-text-color;
   }
 }

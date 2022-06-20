@@ -46,43 +46,6 @@
     }
   }
 
-  &__buttons {
-    grid-area: buttons;
-    display: flex;
-    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      justify-self: end;
-      margin-top: 18px;
-    }
-  }
-  // &__button {
-  //   border: none;
-  //   background-color: transparent;
-  // }
-
-  &__button {
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $button-background-color;
-  }
-
-  &__button use {
-    stroke: $primary-background-color;
-  }
-
-  &__button--left {
-    transform: rotate(90deg);
-    margin-right: 20px;
-  }
-
-  &__button--right {
-    transform: rotate(-90deg);
-  }
-
   &__list {
     grid-area: list;
     @media screen and (min-width: $desktop) {
@@ -148,4 +111,40 @@
     line-height: 1.46;
     color: $circle-background-color;
   }
+
+  .slide__buttons--reviews {
+    grid-area: buttons;
+    // display: flex;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      justify-self: end;
+      margin-top: 18px;
+    }
+  }
+}
+.slide__buttons {
+  display: flex;
+}
+
+.slide__button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $button-background-color;
+}
+
+.slide__button use {
+  stroke: $primary-background-color;
+}
+
+.slide__button--left {
+  transform: rotate(90deg);
+  margin-right: 20px;
+}
+
+.slide__button--right {
+  transform: rotate(-90deg);
 }
