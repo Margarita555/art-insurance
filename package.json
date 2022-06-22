@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "start": "cross-env NODE_ENV=development webpack serve --mode development"
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Margarita555/art-insurance/issues"
   },
-  "homepage": "https://github.com/Margarita555/art-insurance#readme",
+  "homepage": "https://Margarita555.github.io/art-insurance",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
@@ -55,6 +56,7 @@
     "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "normalize.css": "^8.0.1"
   }
 }
