@@ -48,6 +48,11 @@
     margin-bottom: 24px;
   }
 
+  .form__input:focus {
+    outline: none;
+    border-color: $dark-background-color;
+  }
+
   .phone-input::placeholder {
     color: $placeholder-color;
     font-size: 16px;
@@ -93,6 +98,8 @@
     @media screen and (min-width: $desktop) {
       padding: 64px 64px 74px 64px;
       margin-left: 160px;
+      overflow: hidden;
+      position: relative;
     }
   }
 
@@ -105,8 +112,8 @@
       background-size: contain;
       width: 435px;
       height: 435px;
-      top: 100px;
-      right: 106px;
+      top: -160px;
+      right: -116px;
     }
   }
 

@@ -113,6 +113,14 @@
     }
   }
 
+  &__item svg {
+    fill: $contacts-text-color;
+  }
+
+  &__item:hover svg {
+    fill: $icon-hover-color;
+  }
+
   &__item:not(:last-child) {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       padding-bottom: 24px;

@@ -1,12 +1,12 @@
 .instruction {
-  background-color: $primary-background-color;
+  background-color: $main-background-color;
   @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 60px;
     margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 100px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   &__image--thumb {

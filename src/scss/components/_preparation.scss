@@ -40,6 +40,7 @@
     color: $primary-background-color;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    cursor: pointer;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 34px;
       height: 34px;
@@ -53,6 +54,12 @@
       border: 6px solid lighten($circle-background-color, 15%);
     }
   }
+
+  &__circle:hover {
+    background-color: $main-background-color;
+    color: $button-background-color;
+  }
+
   &__item:not(:last-child) > &__circle:after {
     position: absolute;
     content: "";
@@ -64,7 +71,7 @@
       width: 120px;
     }
     @media screen and (min-width: $desktop) {
-      width: 340px;
+      width: 370px;
     }
   }
 
@@ -122,11 +129,17 @@
     }
   }
 
-  .application__icon {
+  .application__image {
+    position: relative;
+    z-index: 1;
+    max-width: 310px;
+  }
+  .application__image--thumb {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       display: none;
     }
     @media screen and (min-width: $desktop) {
+      position: relative;
       background-image: linear-gradient(
         $footer-border-color 33%,
         rgba(255, 255, 255, 0) 0%
@@ -137,6 +150,22 @@
       padding-right: 90px;
     }
   }
+
+  .application__image--thumb::before {
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      content: "";
+      background-image: url("../../assets/icons/intersect.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 157px;
+      height: 157px;
+      bottom: -25px;
+      left: -40px;
+      z-index: 0;
+    }
+  }
+
   .application__wrapper {
     @media screen and (min-width: $desktop) {
       margin-left: 85px;

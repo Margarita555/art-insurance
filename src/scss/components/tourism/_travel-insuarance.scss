@@ -71,6 +71,15 @@
     padding: 13px 16px;
   }
 
+  input:focus {
+    outline: none;
+    border-color: $dark-background-color;
+  }
+  select:focus {
+    outline: none;
+    box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
+  }
+
   .trip-direction__input {
     margin-bottom: 8px;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
@@ -136,6 +145,7 @@
     font-size: 14px;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       position: absolute;
+      // top: 0;
       top: 34px;
     }
     @media screen and (min-width: $desktop) {
@@ -261,15 +271,9 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     background-image: url(../../../assets/icons/arrow-down-blue.svg);
-    background-repeat: no-repeat, repeat;
-    background-position: right 20px top 50%, 0 0;
-    background-size: 0.95em auto, 100%;
-    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      background-position: right 13px top 50%, 0 0;
-    }
-    @media screen and (min-width: $desktop) {
-      background-position: right 20px top 50%, 0 0;
-    }
+    background-repeat: no-repeat;
+    background-size: 0.95em;
+    background-position: right 19px top 50%, 0 0;
   }
 
   .add-button {

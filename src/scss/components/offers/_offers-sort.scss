@@ -48,6 +48,11 @@
       font-size: 16px;
     }
   }
+
+  &__item:hover {
+    color: $primary-text-color;
+    font-weight: 400;
+  }
   &__item:not(:last-child) {
     border-right: none;
   }
