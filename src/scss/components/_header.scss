@@ -1,4 +1,5 @@
 .header {
+  border-bottom: 1px solid $secondary-border-color;
   &__logo {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 96px;

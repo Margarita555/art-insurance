@@ -5,6 +5,7 @@
 @import "utils/fonts";
 @import "components/header";
 @import "components/reviews";
+@import "components/contacts/contacts";
 @import "components/about/about-about";
 @import "components/about/insuarance-types";
 @import "components/preparation";
@@ -19,12 +20,3 @@
 @import "components/instruction";
 @import "components/description";
 @import "components/footer";
-// <symbol id="white-down-arrow" viewBox="0 0 32 32">
-// <path style="stroke: var(--color3, #d7e1e9)" stroke="#d7e1e9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1" d="M16 31.5c-8.56 0-15.5-6.94-15.5-15.5s6.94-15.5 15.5-15.5c8.56 0 15.5 6.94 15.5 15.5s-6.94 15.5-15.5 15.5z"></path>
-// <path fill="none" stroke="#2155cf" style="stroke: var(--color1, #2155cf)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M20.923 13.538l-4.923 5.128-4.923-5.128"></path>
-// </symbol>
-
-// <symbol id="blue-left-arrow" viewBox="0 0 32 32">
-// <path fill="#2155cf" style="fill: var(--color1, #2155cf)" d="M3.2 16c0 7.069 5.731 12.8 12.8 12.8s12.8-5.731 12.8-12.8c0-7.069-5.731-12.8-12.8-12.8s-12.8 5.731-12.8 12.8z"></path>
-// <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.28" d="M17.28 13.44l-2.56 2.56 2.56 2.56"></path>
-// </symbol>

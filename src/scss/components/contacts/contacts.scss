@@ -1,0 +1,168 @@
+.contacts {
+  background-color: $primary-background-color;
+  @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+  }
+
+  .form__box {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+  }
+
+  &__title {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .form__label {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.63;
+    color: $primary-text-color;
+  }
+
+  .form__input {
+    border: 1px solid $secondary-border-color;
+    border-radius: 6px;
+    margin-top: 4px;
+    padding: 11px 14px;
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .phone-input::placeholder {
+    color: $placeholder-color;
+    font-size: 16px;
+  }
+
+  .name-input,
+  .phone-input {
+    @media screen and (min-width: $desktop) {
+      width: 230px;
+    }
+  }
+
+  .name-input {
+    @media screen and (min-width: $desktop) {
+      margin-right: 40px;
+    }
+  }
+
+  .form__message {
+    resize: none;
+  }
+
+  .form__button {
+    border: none;
+    color: $primary-background-color;
+    background-color: $btn-secondary-bg-color;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    margin-top: 8px;
+  }
+
+  .form__button:hover {
+    background-color: $btn-hover-bg-color;
+  }
+
+  .difficulties {
+    background-color: $dark-background-color;
+    border-radius: 12px;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-top: 60px;
+      padding: 32px 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 64px 64px 74px 64px;
+      margin-left: 160px;
+    }
+  }
+
+  .difficulties::after {
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      content: "";
+      background-image: url("../../../assets/icons/circle.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 435px;
+      height: 435px;
+      top: 100px;
+      right: 106px;
+    }
+  }
+
+  .difficulties__title {
+    font-family: $main-font;
+    font-weight: 700;
+    line-height: 1.08;
+    color: $main-background-color;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      font-size: 26px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
+      margin-bottom: 32px;
+    }
+  }
+  .difficulties__item {
+    position: relative;
+    font-family: $main-font;
+    line-height: 1;
+    color: $main-background-color;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      font-size: 18px;
+      margin-left: 21px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 24px;
+      margin-left: 24px;
+    }
+  }
+
+  .difficulties__item::before {
+    content: "";
+    height: 2px;
+    background-color: $main-background-color;
+    position: absolute;
+    color: $main-background-color;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      width: 9px;
+      top: 9px;
+      left: -21px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 10px;
+      top: 12px;
+      left: -24px;
+    }
+  }
+
+  .difficulties__item:not(:last-child) {
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 20px;
+    }
+  }
+}
