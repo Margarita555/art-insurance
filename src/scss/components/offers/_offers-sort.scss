@@ -41,6 +41,7 @@
     text-align: center;
     color: $sort-text-color;
     font-weight: 600;
+    cursor: pointer;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-size: 12px;
     }
