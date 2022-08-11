@@ -1,86 +1,70 @@
 <section class="travel-insuarance">
-  <div class="travel-insuarance__container container">
-    <div class="travel-insuarance__box">
-      <h2 class="travel-insuarance__title title">Туристическое страхование</h2>
-      <div class="travel-insuarance__trip">
-        <div class="trip-direction">
-          <label class="trip-direction__label input-title" id="direction"
-            >Направление поездки</label
-          >
-          <input
-            type="text"
-            for="direction"
-            class="trip-direction__input input"
-          />
-          <div class="example-wrapper">
-            <span class="example">Например:</span>
-            <a href="#" class="example__text example--first"
-              >Шенгенская зона (Европа)</a
-            >
-            <a href="#" class="example__text">Весь мир</a>
+  <form name="travel-insurance">
+    <div class="travel-insuarance__container container">
+      <div class="travel-insuarance__box">
+        <h2 class="travel-insuarance__title title">Туристическое страхование</h2>
+        <div class="travel-insuarance__trip">
+          <div class="trip-direction">
+            <label class="trip-direction__label input-title" for="direction">Направление поездки</label>
+            <input type="text" id="direction" class="trip-direction__input input" />
+            <div class="example-wrapper">
+              <span class="example">Например:</span>
+              <a href="#" class="example__text example--first">Шенгенская зона (Европа)</a>
+              <a href="#" class="example__text">Весь мир</a>
+            </div>
+          </div>
+
+          <div class="trip-period">
+            <h4 class="trip-period__title input-title">Период поездки</h4>
+            <span class="trip-period__days">11 дней</span>
+            <span class="trip-period__label trip-period__label--start">От</span>
+            <select class="trip-period__select trip-period__select--start input select">
+              <option value="">07.11.2019</option>
+              <option value="">08.11.2019</option>
+              <option value="">09.11.2019</option>
+            </select>
+            <span class="trip-period__label trip-period__label--finish select">До</span>
+            <select class="trip-period__select input select">
+              <option value="">07.11.2019</option>
+              <option value="">08.11.2019</option>
+              <option value="">09.11.2019</option>
+            </select>
           </div>
         </div>
 
-        <div class="trip-period">
-          <h4 class="trip-period__title input-title">Период поездки</h4>
-          <span class="trip-period__days">11 дней</span>
-          <span class="trip-period__label trip-period__label--start">От</span>
-          <select
-            class="trip-period__select trip-period__select--start input select"
-          >
-            <option value="">07.11.2019</option>
-            <option value="">08.11.2019</option>
-            <option value="">09.11.2019</option>
-          </select>
-          <span class="trip-period__label trip-period__label--finish select"
-            >До</span
-          >
-          <select name="" id="" class="trip-period__select input select">
-            <option value="">07.11.2019</option>
-            <option value="">08.11.2019</option>
-            <option value="">09.11.2019</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="tourists">
-        <h3 class="tourists__title">Данные о туристах</h3>
-        <div class="tourists__wrapper">
-          <div class="tourists__box">
-            <h4 class="tourists__subtitle">Турист 1</h4>
-            <ul class="tourists__list">
-              <li class="tourists__item">
-                <div class="date-wrapper">
-                  <label id="date" class="tourists__label input-title"
-                    >Дата рождения</label
-                  >
-                  <input type="rext" for="date" class="tourists__input input" />
-                </div>
-                <div class="aim-wrapper">
-                  <h4 class="tourists__select-title input-title">
-                    Цель поездки
-                  </h4>
-                  <select class="tourists__select input select">
-                    <option value="">посещение родственников</option>
-                    <option value="">посещение родственников</option>
-                    <option value="">посещение родственников</option>
-                  </select>
-                </div>
-              </li>
-            </ul>
+        <div class="tourists">
+          <h3 class="tourists__title">Данные о туристах</h3>
+          <div class="tourists__wrapper">
+            <div class="tourists__box">
+              <h4 class="tourists__subtitle">Турист 1</h4>
+              <ul class="tourists__list">
+                <li class="tourists__item">
+                  <div class="date-wrapper">
+                    <label for="date" class="tourists__label input-title">Дата рождения</label>
+                    <input type="text" id="date" class="tourists__input input" />
+                  </div>
+                  <div class="aim-wrapper">
+                    <h4 class="tourists__select-title input-title">Цель поездки</h4>
+                    <select class="tourists__select input select">
+                      <option value="">посещение родственников</option>
+                      <option value="">посещение родственников</option>
+                      <option value="">посещение родственников</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <button type="button" class="add-button">
-        <svg width="17" height="17">
-          <use href="assets/icons/sprite.svg#plus"></use>
-        </svg>
-        <p class="add-button__text">Добавить туриста</p>
-      </button>
+        <button type="submit" class="add-button">
+          <svg width="17" height="17">
+            <use href="assets/icons/sprite.svg#plus"></use>
+          </svg>
+          <span class="add-button__text">Добавить туриста</span>
+        </button>
 
-      <button type="button" class="travel-insuarance__button button">
-        От 1296 грн - смотреть полисы
-      </button>
+        <button type="button" class="travel-insuarance__button button">От 1296 грн - смотреть полисы</button>
+      </div>
     </div>
-  </div>
+  </form>
 </section>
