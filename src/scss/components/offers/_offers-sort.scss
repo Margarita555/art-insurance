@@ -1,11 +1,11 @@
 .sort {
   @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 36px;
-    padding-bottom: 36px;
+    padding-bottom: 38px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 37px;
+    padding-bottom: 50px;
   }
 
   &__container {
@@ -13,20 +13,27 @@
     @media screen and (min-width: $desktop) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
 
+  &__text {
+    font-family: $main-font;
+    line-height: 1.38;
+    font-weight: 400;
+    font-size: 16px;
+  }
   &__offers {
     font-family: $main-font;
     line-height: 0.73;
     font-weight: 600;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 26px;
     }
     @media screen and (min-width: $desktop) {
-      margin-top: 16px;
+      margin-top: 24px;
       font-size: 30px;
     }
   }
@@ -36,17 +43,25 @@
   }
 
   &__item {
+    vertical-align: center;
+    font-family: $main-font;
     border: 1px solid $secondary-border-color;
-    padding: 16px 10px;
+
     text-align: center;
     color: $sort-text-color;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       font-size: 12px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     @media screen and (min-width: $desktop) {
       font-size: 16px;
+      padding: 13px 10px;
     }
   }
 
@@ -73,11 +88,12 @@
       width: calc(100% / 3);
     }
     @media screen and (min-width: $desktop) {
-      width: 185px;
+      width: 183px;
     }
   }
 
   &__item.active {
+    font-weight: 600;
     background-color: $secondary-background-color;
     color: $primary-text-color;
   }

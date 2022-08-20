@@ -9,8 +9,7 @@ html {
 }
 
 .body {
-  font-family: $main-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: $main-font, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
 }
@@ -65,7 +64,7 @@ img {
   .greencard__container,
   .sort__container,
   .offers__container {
-    max-width: 1270px;
+    max-width: 1269px;
   }
 }
 
@@ -85,9 +84,9 @@ img {
 }
 
 .button {
-  @include fonts($main-font, 14px, 1);
+  @include fonts($main-font, 16px, 1);
   font-weight: 600;
-  padding: 20px 45px 18px 45px;
+  padding: 20px 45px 20px 45px;
   letter-spacing: 0.08em;
   border-radius: 50px;
   text-transform: uppercase;

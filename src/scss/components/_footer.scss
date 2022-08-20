@@ -69,14 +69,14 @@
     text-align: center;
     grid-template-columns: 100%;
     grid-template-areas:
-      "email"
-      "phone"
-      "copyright"
-      "developers";
+      'email'
+      'phone'
+      'copyright'
+      'developers';
   }
   @media screen and (min-width: $desktop) {
     grid-template-columns: 30% 40% 30%;
-    grid-template-areas: "copyright contacts-info developers";
+    grid-template-areas: 'copyright contacts-info developers';
   }
 
   &__copyright {
@@ -145,7 +145,7 @@
     grid-area: developers;
     display: flex;
     align-items: center;
-    @include fonts($main-font, 14px, 1.16);
+    @include fonts($main-font, 14px, 1.63);
     color: $developers-text-color;
     opacity: 0.9;
 

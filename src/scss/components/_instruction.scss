@@ -11,23 +11,28 @@
 
   &__image--thumb {
     position: relative;
+    margin-bottom: -1px;
+    margin-left: -1px;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       order: 1;
       width: 285px;
+      height: 201px;
+      overflow: hidden;
+      // margin-bottom: -1px;
     }
   }
 
   &__image--thumb::after {
     position: absolute;
-    content: "";
+    content: '';
     display: inline-block;
-    background-image: url("../../assets/icons/circle.svg");
+    background-image: url('../../assets/icons/circle.svg');
     background-repeat: no-repeat;
     background-size: contain;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 233px;
       height: 236px;
-      bottom: -30px;
+      bottom: -60px;
       left: -60px;
     }
     @media screen and (min-width: $desktop) {
@@ -42,18 +47,21 @@
     background-color: $background-color;
     display: flex;
     border-radius: 10px;
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    // box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       flex-direction: column;
+    }
+    @media screen and (min-width: $desktop) {
+      box-shadow: (0px 4px 46px rgba(123, 139, 181, 0.22));
     }
   }
 
   &__content {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      padding: 40px 26px 27px;
+      padding: 40px 16px 10px 24px;
     }
     @media screen and (min-width: $desktop) {
-      padding: 76px 26px 27px;
+      padding: 76px 26px 27px 16px;
     }
   }
 
@@ -95,14 +103,16 @@
   }
 
   &__item::before {
-    content: "";
+    position: relative;
+    content: '';
     display: inline-block;
-    background-image: url("../../assets/icons/security.svg");
+    background-image: url('../../assets/icons/security.svg');
+    left: 5px;
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-left: 39px;
+    padding-left: 43px;
   }
 
   &__button {
@@ -118,10 +128,12 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      padding: 20px 38px 20px 38px;
     }
     @media screen and (min-width: $desktop) {
       margin-top: 50px;
       font-size: 16px;
+      padding: 28px 65px;
     }
   }
 
