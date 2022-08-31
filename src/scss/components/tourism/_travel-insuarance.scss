@@ -1,7 +1,7 @@
 .travel-insuarance {
   @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 32px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 50px;
@@ -13,15 +13,12 @@
     display: flex;
     flex-direction: column;
     background-color: $main-background-color;
-    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-    }
     @media screen and (min-width: $desktop) {
       margin-right: auto;
       margin-left: auto;
       width: 1072px;
       padding: 50px 31px;
-      box-shadow: 0px 4px 46px rgba(161, 168, 188, 0.22),
-        0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 46px rgba(161, 168, 188, 0.22), 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
     }
   }
@@ -32,6 +29,7 @@
       margin-bottom: 32px;
       padding-left: 10px;
       padding-right: 10px;
+      font-size: 36px;
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 40px;
@@ -67,7 +65,7 @@
   .input {
     border: 1px solid $secondary-border-color;
     border-radius: 6px;
-    margin-top: 4px;
+    margin-top: 1px;
     padding: 13px 16px;
   }
 
@@ -145,7 +143,6 @@
     font-size: 14px;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       position: absolute;
-      // top: 0;
       top: 34px;
     }
     @media screen and (min-width: $desktop) {
@@ -231,8 +228,6 @@
   }
 
   .tourists__item {
-    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-    }
     @media screen and (min-width: $desktop) {
       display: flex;
       justify-content: space-between;
@@ -243,14 +238,11 @@
     display: block;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       width: 328px;
+      margin-bottom: 24px;
     }
     @media screen and (min-width: $desktop) {
       width: 200px;
     }
-  }
-
-  .date-wrapper {
-    margin-bottom: 24px;
   }
 
   .tourists__select {
@@ -308,8 +300,7 @@
     border: none;
     color: $primary-background-color;
     background-color: $btn-secondary-bg-color;
-    padding-top: 20px;
-    padding-bottom: 18px;
+    padding: 21px 51px 21px;
   }
   &__button:hover {
     background-color: $btn-hover-bg-color;

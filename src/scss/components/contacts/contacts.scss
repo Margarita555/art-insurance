@@ -2,11 +2,11 @@
   background-color: $primary-background-color;
   @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     padding-top: 40px;
-    padding-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 70px;
     padding-bottom: 90px;
+    margin-bottom: 40px;
   }
 
   &__wrapper {
@@ -18,11 +18,14 @@
   .form__box {
     @media screen and (min-width: $desktop) {
       display: flex;
+      width: 490px;
     }
   }
 
   &__title {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      font-size: 32px;
+      line-height: 1.1;
       margin-bottom: 32px;
     }
     @media screen and (min-width: $desktop) {
@@ -46,6 +49,12 @@
     display: block;
     width: 100%;
     margin-bottom: 24px;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      padding: 10px 16px 10px 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 11px 14px 11px 14px;
+    }
   }
 
   .form__input:focus {
@@ -67,7 +76,7 @@
 
   .name-input {
     @media screen and (min-width: $desktop) {
-      margin-right: 40px;
+      margin-right: 30px;
     }
   }
 
@@ -79,9 +88,11 @@
     border: none;
     color: $primary-background-color;
     background-color: $btn-secondary-bg-color;
-    padding-top: 20px;
-    padding-bottom: 18px;
+    padding: 20px 78px;
     margin-top: 8px;
+    @media screen and (min-width: $desktop) {
+      padding: 20px 55px;
+    }
   }
 
   .form__button:hover {
@@ -96,7 +107,7 @@
       padding: 32px 16px;
     }
     @media screen and (min-width: $desktop) {
-      padding: 64px 64px 74px 64px;
+      padding: 64px 103px 74px 64px;
       margin-left: 160px;
       overflow: hidden;
       position: relative;
@@ -106,8 +117,8 @@
   .difficulties::after {
     @media screen and (min-width: $desktop) {
       position: absolute;
-      content: "";
-      background-image: url("../../../assets/icons/circle.svg");
+      content: '';
+      background-image: url('../../../assets/icons/circle.svg');
       background-repeat: no-repeat;
       background-size: contain;
       width: 435px;
@@ -147,18 +158,17 @@
   }
 
   .difficulties__item::before {
-    content: "";
-    height: 2px;
+    content: '';
+    width: 12px;
+    height: 3px;
     background-color: $main-background-color;
     position: absolute;
     color: $main-background-color;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      width: 9px;
       top: 9px;
       left: -21px;
     }
     @media screen and (min-width: $desktop) {
-      width: 10px;
       top: 12px;
       left: -24px;
     }

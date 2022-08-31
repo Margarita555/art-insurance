@@ -23,6 +23,8 @@
   &__logo {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin: 0 auto;
+      width: 185px;
+      height: 41px;
     }
   }
 
@@ -63,7 +65,7 @@
   }
 }
 .basement {
-  margin-top: 44px;
+  margin-top: 45px;
   display: grid;
   @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
     text-align: center;
@@ -131,7 +133,7 @@
   }
 
   &__link {
-    margin-left: 7px;
+    margin-left: 8px;
     @include fonts($main-font, 18px, 1.18);
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       color: $contacts-text-color;

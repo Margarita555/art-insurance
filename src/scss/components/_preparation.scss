@@ -24,10 +24,15 @@
     justify-content: center;
   }
 
+  &__item {
+    @media screen and (min-width: $desktop) {
+      text-align: center;
+      width: 390px;
+    }
+  }
+
   &__circle {
     position: relative;
-    width: 44px;
-    height: 44px;
     margin-left: auto;
     margin-right: auto;
     background-color: $circle-background-color;
@@ -35,21 +40,21 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-family: $main-font;
+    font-family: OpenSans;
     font-weight: 500;
     color: $primary-background-color;
     line-height: 1.1;
     letter-spacing: 0.02em;
     cursor: pointer;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      width: 34px;
-      height: 34px;
+      width: 41px;
+      height: 41px;
       font-size: 18px;
       border: 5px solid lighten($circle-background-color, 15%);
     }
     @media screen and (min-width: $desktop) {
-      width: 44px;
-      height: 44px;
+      width: 56px;
+      height: 56px;
       font-size: 24px;
       border: 6px solid lighten($circle-background-color, 15%);
     }
@@ -62,8 +67,8 @@
 
   &__item:not(:last-child) > &__circle:after {
     position: absolute;
-    content: "";
-    height: 2px;
+    content: '';
+    height: 1px;
     left: 97%;
     background-color: $circle-background-color;
     z-index: 0;
@@ -82,7 +87,7 @@
 
   &__item:not(:last-child) > .active-line::before {
     position: absolute;
-    content: "";
+    content: '';
     height: 2px;
     width: 120%;
     left: 97%;
@@ -92,10 +97,7 @@
 
   &__item:not(:last-child) {
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      margin-right: 98px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 160px;
+      margin-right: 104px;
     }
   }
   &__choice {
@@ -123,8 +125,8 @@
       padding: 24px 18px 50px;
     }
     @media screen and (min-width: $desktop) {
-      margin-top: 50px;
-      padding: 30px 65px 47px 83px;
+      margin-top: 51px;
+      padding: 35px 65px 47px 85px;
       max-width: 1050px;
     }
   }
@@ -140,22 +142,19 @@
     }
     @media screen and (min-width: $desktop) {
       position: relative;
-      background-image: linear-gradient(
-        $footer-border-color 33%,
-        rgba(255, 255, 255, 0) 0%
-      );
+      background-image: linear-gradient($footer-border-color 33%, rgba(255, 255, 255, 0) 0%);
       background-position: right;
       background-size: 2px 14px;
       background-repeat: repeat-y;
-      padding-right: 90px;
+      padding-right: 78px;
     }
   }
 
   .application__image--thumb::before {
     @media screen and (min-width: $desktop) {
       position: absolute;
-      content: "";
-      background-image: url("../../assets/icons/intersect.svg");
+      content: '';
+      background-image: url('../../assets/icons/intersect.svg');
       background-repeat: no-repeat;
       background-size: contain;
       width: 157px;
@@ -186,11 +185,14 @@
 
   .application__text {
     font-family: $main-font;
-    line-height: 1.7;
     color: $text-color;
     opacity: 0.8;
+    font-size: 16px;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      line-height: 1.4;
+    }
     @media screen and (min-width: $desktop) {
-      font-size: 16px;
+      line-height: 1.7;
     }
   }
 }

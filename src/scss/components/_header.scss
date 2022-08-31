@@ -16,23 +16,21 @@
   }
 
   &__container {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-     padding-top: 12px;
-    padding-bottom: 12px;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
 
     @media screen and (min-width: $desktop) {
-      padding-top: 24px;
-    padding-bottom: 24px;
+      padding-top: 26px;
+      padding-bottom: 26px;
     }
   }
 
   &__nav {
-    // display: flex;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       display: none;
     }

@@ -10,8 +10,7 @@
     padding-bottom: 56px;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 40px;
-    padding-bottom: 90px;
+    padding-bottom: 115px;
   }
 
   &__title {
@@ -25,38 +24,44 @@
     @media screen and (min-width: $desktop) {
       margin-bottom: 16px;
       font-size: 36px;
-      margin-right: 130px;
-      margin-left: 130px;
     }
   }
 
   &__text {
-    overflow: auto;
     font-family: $main-font;
     color: $service-text-color;
     line-height: 1.46;
     padding-right: 20px;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      height: 185px;
       font-size: 14px;
     }
     @media screen and (min-width: $desktop) {
-      height: 235px;
-      font-size: 16px;
-      margin-right: 130px;
-      margin-left: 130px;
     }
   }
 
-  &__text::-webkit-scrollbar {
+  &__content {
+    overflow: auto;
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      height: 226px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 265px;
+      width: 1270px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__content::-webkit-scrollbar {
     width: 10px;
   }
-  &__text::-webkit-scrollbar-track {
+
+  &__content::-webkit-scrollbar-track {
     background: #e5e5e5;
     border: 4px solid #fff;
   }
 
-  &__text::-webkit-scrollbar-thumb {
+  &__content::-webkit-scrollbar-thumb {
     background: $scroll-color;
     border-radius: 5px;
   }
@@ -68,8 +73,14 @@
     position: absolute;
     left: 0;
     bottom: -21px;
-    width: 98%;
-    height: 38px;
+    width: 96%;
+
     background: linear-gradient(180deg, transparent, #fff 30%);
+    @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
+      height: 45px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 32px;
+    }
   }
 }

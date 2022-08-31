@@ -25,7 +25,7 @@
     @media screen and (min-width: $desktop) {
       display: flex;
       align-items: center;
-      padding: 27px 40px 21px 41px;
+      padding: 33px 40px 26px 41px;
     }
   }
 
@@ -52,7 +52,7 @@
   }
 
   &__text {
-    @include fonts($main-font, 18px, 1.18);
+    @include fonts($main-font, 18px, 1.63);
     font-weight: 600;
   }
 
@@ -66,6 +66,7 @@
     @media screen and (min-width: $desktop) {
       padding-bottom: 32px;
       padding: 32px 41px;
+      line-height: 1.1;
     }
   }
   &__button {
@@ -76,12 +77,12 @@
     border: 1px solid $button-background-color;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
       margin-top: 22px;
-      padding: 17px 47px;
+      padding: 17px 56px;
     }
     @media screen and (min-width: $desktop) {
       margin-right: 0;
       margin-left: auto;
-      padding: 21px 63px;
+      padding: 20px 63px;
     }
   }
 

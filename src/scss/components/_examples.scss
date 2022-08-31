@@ -1,6 +1,6 @@
 .examples {
   @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-    padding-top: 50px;
+    padding-top: 12px;
     padding-bottom: 50px;
   }
   @media screen and (min-width: $desktop) {
@@ -10,10 +10,10 @@
   &__title {
     text-align: center;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      margin-bottom: 50px;
+      margin-bottom: 32px;
     }
     @media screen and (min-width: $desktop) {
-      margin-bottom: 32px;
+      margin-bottom: 50px;
     }
   }
 
@@ -62,6 +62,7 @@
   .sort__item--examples {
     @media screen and (min-width: $mobile) and (max-width: $desktop) {
       width: 164px;
+      font-size: 16px;
     }
     @media screen and (min-width: $desktop) {
       width: 196px;

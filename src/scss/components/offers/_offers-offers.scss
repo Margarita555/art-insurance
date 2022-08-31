@@ -7,6 +7,7 @@
   @media screen and (min-width: $desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   &__container {
@@ -19,7 +20,7 @@
     box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
     display: grid;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      padding: 20px 26px 32px 25px;
+      padding: 20px 26px 32px 26px;
       grid-template-columns: 52% 48%;
       grid-template-areas:
         'logo rating'
@@ -33,6 +34,7 @@
     }
 
     @media screen and (min-width: $desktop) {
+      height: 120px;
       padding: 47px 38px 30px 54px;
       grid-template-columns: 22% 14% 24% 12% 1fr 2fr;
       grid-template-areas:
@@ -184,7 +186,7 @@
       padding: 15px 100px;
     }
     @media screen and (min-width: $desktop) {
-      margin-top: -3px;
+      margin-top: -8px;
       padding-top: 15px;
       padding-bottom: 15px;
     }

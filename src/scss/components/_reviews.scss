@@ -58,10 +58,10 @@
     box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
     border-radius: 10px;
     @media screen and (min-width: $mobile) and (max-width: ($desktop)) {
-      padding: 26px 18px;
+      padding: 26px 18px 44px 18px;
     }
     @media screen and (min-width: $desktop) {
-      padding: 27px 26px;
+      padding: 27px 26px 44px 26px;
     }
   }
 
